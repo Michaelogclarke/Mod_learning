@@ -1,5 +1,6 @@
 package net.michaelog.mogsmod.item;
 
+import net.michaelog.mogsmod.block.ModBlocks;
 import net.michaelog.mogsmod.mogsmod;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -17,8 +18,12 @@ public class ModCreatveModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(Moditems.SAPPHIRE.get()))
                     .title(Component.translatable("creativetab.mogs_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        //Items
                         output.accept(Moditems.SAPPHIRE.get());
                         output.accept(Moditems.RAW_SAPPHIRE.get());
+
+                        //Blocks
+                        output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
 
 
                     })

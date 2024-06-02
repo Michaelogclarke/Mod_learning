@@ -1,6 +1,7 @@
 package net.michaelog.mogsmod;
 
 import com.mojang.logging.LogUtils;
+import net.michaelog.mogsmod.block.ModBlocks;
 import net.michaelog.mogsmod.item.ModCreatveModTabs;
 import net.michaelog.mogsmod.item.Moditems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -28,6 +29,7 @@ public class mogsmod {
         ModCreatveModTabs.register(modEventBus);
 
         Moditems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
