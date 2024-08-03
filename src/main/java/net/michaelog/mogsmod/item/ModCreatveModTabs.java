@@ -24,6 +24,10 @@ public class ModCreatveModTabs {
 
                         //Blocks
                         output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
+                        output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
+
+                        //Spawn eggs
+                        output.accept(Moditems.RHINO_SPAWN_EGG.get());
 
 
                     })
